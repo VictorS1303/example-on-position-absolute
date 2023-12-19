@@ -1,0 +1,48 @@
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* KIG HER, EFTER DU HAR KIGGET PÅ ".inner-container" */
+.container.outer-container
+{
+    /* 
+        Lige nu har jeg sat "outer-container" til at være "position: absolute;".
+        Den kunne lige så godt være sat til noget andet, så længe det ikke er "static".
+        Inden du ændrer det til "static", så prøv at tænke over, hvad der sker, når/hvis du ændrer den til "static",
+        og hvorfor der sker, hvad der sker.
+    */
+    position: absolute;
+    border: 5px solid red;
+    height: 300px;
+    width: 300px;
+}
+
+/* KIG HER, FØR DU KIGGER PÅ ".outer-container" */
+.container.inner-container
+{
+    /* 
+        Her har "inner-container" til at være "position: absolute;",
+        så den grønne boks nu er oppe i øverste venstre hjørne af "inner-container".
+        Inden du ændrer det til "static", så prøv at tænke over, hvad der sker, når/hvis du ændrer den til "static",
+        og hvorfor der sker, hvad der sker.
+    */
+    position: absolute;
+    margin: 45px;
+    border: 5px solid blue;
+    height: 200px;
+    width: 200px;
+}
+
+.box
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100px;
+    background-color: green;
+}
